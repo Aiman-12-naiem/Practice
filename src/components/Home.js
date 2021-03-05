@@ -6,9 +6,9 @@ const Home = () => {
   }
   const numbers = [1, 2, 3, 4, 5]
   const output = numbers.map(item => item*2);
-  console.log(output);
- return (
+  console.log(output); 
 
+ return ( 
     <div className="card mt-5">
     <div className="card-header bg-dark">
       <h3 className="text-light">{Greet}</h3>
