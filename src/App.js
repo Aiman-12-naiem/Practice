@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './css/Style.css'
+// import Navbar from './components/Navbar.js';
+// import Home from './components/Home.js';
+// import Sidebar from './components/Sidebar.js';
+import Contact from './components/Contact.js';
 function App() {
+  const contacts = [
+    {
+      name: "Mr. Whiskerson", 
+      imgUrl: "http://placekitten.com/300/200", 
+      phone: "(212) 555-1234", 
+      email: "mr.whiskaz@catnap.meow"
+    },
+    {
+      name: "Mr. Whiskerson", 
+      imgUrl: "http://placekitten.com/300/200", 
+      phone: "(212) 555-1234", 
+      email: "mr.whiskaz@catnap.meow"
+    },
+    {
+      name: "Mr. Whiskerson", 
+      imgUrl: "http://placekitten.com/300/200", 
+      phone: "(212) 555-1234", 
+      email: "mr.whiskaz@catnap.meow"
+    }
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Print Navbar */}
+      {/* <Navbar /> */}
+      {/* Print Home Section */}
+      {/* <div className="container">
+        <div className="row ">
+          <div className="col-8">
+            <Home />
+            </div>
+            <div className="col-4">
+              <Sidebar />
+            </div>
+          </div>
+        </div>   */}
+     
+     {/* Print Contact cards */}
+     <Contact contacts={contacts} />
+   
+
     </div>
   );
 }
-
 export default App;
