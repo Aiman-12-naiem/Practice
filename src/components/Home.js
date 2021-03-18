@@ -7,7 +7,7 @@ const Home = () => {
   const numbers = [1, 2, 3, 4, 5]
   const output = numbers.map(item => item*2);
   console.log(output); 
-
+// My Name Is Aiman Naiem
  return ( 
     <div className="card mt-5">
     <div className="card-header bg-dark">
